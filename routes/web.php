@@ -29,11 +29,13 @@ Route::middleware(['snae.auth'])->group(function(){
         Route::get('/demandes/nouvelle',[CitoyenController::class,'create'])->name('demandes.create');
         Route::post('/demandes',[CitoyenController::class,'store'])->name('demandes.store');
         Route::get('/profil',[CitoyenController::class,'profil'])->name('profil');
+		Route::get('/fiche', [CitoyenController::class, 'fiche'])->name('fiche');
     });
     Route::prefix('agent')->middleware(['snae.role:agent_public'])->name('agent.')->group(function(){
         Route::get('/dashboard',[AgentController::class,'dashboard'])->name('dashboard');
         Route::get('/demandes',[AgentController::class,'demandes'])->name('demandes');
         Route::post('/demandes/{demande}/statut',[AgentController::class,'statut'])->name('demandes.statut');
         Route::get('/services',[AgentController::class,'services'])->name('services');
+		Route::get('/fiche', [CitoyenController::class, 'fiche'])->name('fiche');
     });
 });

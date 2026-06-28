@@ -29,7 +29,37 @@ input,select,textarea{padding:10px;border:1px solid #cbd5e1;border-radius:7px}
 .home-card{max-width:1100px;margin:auto;background:white;border-radius:18px;padding:42px}
 .home-title{text-align:center;color:#064635;font-size:38px}
 .home-subtitle{text-align:center;color:#55627a;font-size:18px}
-@media(max-width:900px){.cards,.grid{grid-template-columns:1fr}.topbar{display:block}.search-form{margin:12px 0}.user-info{margin:10px 0}}
+@media(max-width:900px){.cards,.grid{grid-template-columns:1fr}.topbar{display:block}.search-form{margin:12px 0}.user-info{margin:10px 0}
+.print-header{display:none}
+
+@media print{
+    .topbar,
+    .btn,
+    form,
+    button{
+        display:none!important;
+    }
+
+    body{
+        background:white;
+        color:black;
+    }
+
+    .container{
+        box-shadow:none;
+        margin:0;
+        max-width:100%;
+        border-radius:0;
+    }
+
+    .print-header{
+        display:block;
+        text-align:center;
+        margin-bottom:25px;
+        border-bottom:2px solid #000;
+        padding-bottom:10px;
+    }
+}
 </style>
 </head>
 
