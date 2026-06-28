@@ -1,6 +1,11 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>SNAE-RCA</title>
-<link rel="stylesheet" href="{{ asset('css/snae.css') }}"></head>
+<!doctype html><html lang="fr">
+<head><meta charset="utf-8">
+<title>SNAE-RCA</title>
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+<link rel="stylesheet" href="{{ asset('css/snae.css') }}">
+</head>
 <body><header class="topbar"><strong>SNAE-RCA</strong>
+
 <a class="btn" href="{{ route('home') }}">Accueil</a>
 
 @if(session('role') === 'admin')
