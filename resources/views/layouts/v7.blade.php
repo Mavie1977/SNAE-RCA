@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SNAE-RCA V7 Enterprise</title>
+<title>PNAE-RCA</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#17202a}
@@ -23,7 +23,7 @@ body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#17202a}
 </head>
 <body>
 <header class="header">
-<a class="logo" href="{{ route('portal.home') }}">SNAE-RCA V7</a>
+<a class="logo" href="{{ route('portal.home') }}">PNAE-RCA</a>
 <nav class="nav">
 <a href="{{ route('themes.index') }}">Démarches</a>
 <a href="{{ route('portal.home') }}">Accueil</a>

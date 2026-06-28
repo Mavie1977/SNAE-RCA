@@ -20,8 +20,7 @@
 <section class="theme-home">
     <div class="theme-wrap">
         <div class="theme-head">
-            <p>PARTICULIERS</p>
-            <h1>VOS DÉMARCHES PAR THÈME</h1>
+            <h1>VOS DÉMARCHES EN LIGNE</h1>
         </div>
 
         <div class="theme-grid">
