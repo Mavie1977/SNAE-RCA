@@ -37,5 +37,6 @@ Route::middleware(['snae.auth'])->group(function(){
         Route::post('/demandes/{demande}/statut',[AgentController::class,'statut'])->name('demandes.statut');
         Route::get('/services',[AgentController::class,'services'])->name('services');
 		Route::get('/fiche', [CitoyenController::class, 'fiche'])->name('fiche');
+		Route::get('/fiche', [AgentController::class, 'fiche'])->name('fiche');
     });
 });

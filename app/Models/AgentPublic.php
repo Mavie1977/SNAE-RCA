@@ -21,4 +21,13 @@ class AgentPublic extends Model
         'date_recrutement',
         'statut',
     ];
-}
+public function fiche()
+{
+    $agent = AgentPublic::where('nom', 'like', '%' . session('name') . '%')
+        ->orWhere('prenom', 'like', '%' . session('name') . '%')
+        ->first();
+
+    return view('agent.fiche', [
+        'agent' => $agent
+    ]);
+}}
