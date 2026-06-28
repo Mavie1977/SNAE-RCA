@@ -124,10 +124,10 @@ input,select,textarea{padding:10px;border:1px solid #cbd5e1;border-radius:7px}
 
 <body>
 <header class="topbar">
-    <a class="logo" href="{{ route('home') }}">SNAE-RCA</a>
+    <a class="logo" href="{{ route('portal.home') }}">SNAE-RCA</a>
 
     <nav class="nav">
-        <a href="{{ route('home') }}">Accueil</a>
+        <a href="{{ route('portal.home') }}">Accueil</a>
 
         @if(session('role') === 'admin')
             <a href="{{ route('admin.dashboard') }}">Tableau de bord</a>
