@@ -60,6 +60,65 @@ input,select,textarea{padding:10px;border:1px solid #cbd5e1;border-radius:7px}
         padding-bottom:10px;
     }
 }
+
+.theme-home{
+    background:#eee;
+    padding:50px 40px;
+    min-height:100vh;
+}
+.theme-head p{
+    color:#555;
+    font-size:26px;
+    font-weight:bold;
+    margin:0;
+}
+.theme-head h1{
+    color:#064635;
+    font-size:46px;
+    margin:15px 0 40px;
+}
+.theme-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+.theme-card{
+    background:white;
+    padding:28px 24px;
+    min-height:280px;
+    box-shadow:0 3px 10px rgba(0,0,0,.18);
+}
+.theme-icon{
+    font-size:70px;
+    text-align:center;
+    margin-bottom:20px;
+}
+.theme-card h2{
+    color:#f07f2f;
+    font-size:24px;
+    text-transform:uppercase;
+}
+.theme-card ul{
+    color:#666;
+    font-size:20px;
+    line-height:1.6;
+    padding-left:20px;
+}
+.theme-card a{
+    color:#064635;
+    font-size:22px;
+    font-weight:bold;
+    text-decoration:none;
+    float:right;
+}
+@media(max-width:900px){
+    .theme-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .theme-head h1{
+        font-size:34px;
+    }
+}
 </style>
 </head>
 
