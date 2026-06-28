@@ -1,0 +1,14 @@
+INSTALLATION V7 ENTERPRISE
+
+Copier/remplacer dans ton projet Laravel :
+- app/
+- database/
+- resources/
+- routes/
+
+Puis exécuter :
+php artisan migrate --seed
+php artisan optimize:clear
+git add .
+git commit -m "Add SNAE-RCA V7 Enterprise architecture"
+git push origin main
