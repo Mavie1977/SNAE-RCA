@@ -3,7 +3,7 @@
 @section('content')
 <div style="min-height:100vh;background:#064635;padding:80px 40px;">
     <div style="max-width:1100px;margin:auto;background:white;border-radius:18px;padding:42px;">
-        <h1 style="text-align:center;color:#064635;font-size:38px;">SNAE-RCA V6</h1>
+        <h1 style="text-align:center;color:#064635;font-size:38px;">SNAE-RCA</h1>
         <p style="text-align:center;color:#55627a;font-size:18px;">
             Système National d'Administration Électronique - 11 ministères connectés
         </p>
