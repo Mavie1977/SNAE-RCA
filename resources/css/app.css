@@ -1,46 +1,87 @@
-@import 'tailwindcss';
+/* ===== HEADER V7 ===== */
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
-/* HEADER */
 .topbar{
-    background:#0a4d3c;
-    color:#fff;
-
-    height:60px;          /* avant environ 80-100px */
-    padding:0 24px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
     position:sticky;
     top:0;
     z-index:1000;
-}
-.logo{
-    font-size:18px;
-    font-weight:700;
-    text-decoration:none;
-    color:#fff;
-}
-.nav{
+
+    height:56px;
+
+    background:#0b4d3c;
+
     display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 25px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
     gap:10px;
+
+    color:white;
+    font-size:28px;
+    font-weight:700;
+
+    text-decoration:none;
+}
+
+.logo img{
+    width:34px;
+}
+
+.nav{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 .nav a{
+
+    color:white;
+    text-decoration:none;
+
     padding:8px 16px;
-    font-size:15px;
+
     border-radius:6px;
+
+    transition:.2s;
 }
 
-.topbar{
-    height:52px;
-    padding:0 20px;
+.nav a:hover{
+
+    background:#10684f;
+
+}
+
+.search{
+
+    width:420px;
+    position:relative;
+
+}
+
+.search input{
+
+    width:100%;
+    padding:10px 15px;
+
+    border:none;
+    border-radius:25px;
+
+}
+
+.user-menu{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:white;
+
 }
