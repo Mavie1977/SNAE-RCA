@@ -1,8 +1,8 @@
 @extends('layouts.v7')
 @section('content')
 <section class="hero">
-    <h1>SNAE-RCA V7 Enterprise</h1>
-    <p>Portail national des démarches administratives en ligne</p>
+    <h1>PNAE-RCA</h1>
+    <p>Portail National Des Démarches Administratives En Ligne</p>
 </section>
 <main class="container">
     <h2>Vos démarches par thème</h2>
